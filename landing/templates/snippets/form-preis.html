@@ -1,5 +1,7 @@
-<form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                    <div class="form-wrap">
+<form id="form_2" class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action=".">
+             <input type="hidden" name="form_type" value="form_2">
+    {% csrf_token %}
+    <div class="form-wrap">
                       <label class="form-label" for="contact-name">Name</label>
                       <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
                     </div>
