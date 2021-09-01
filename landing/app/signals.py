@@ -2,10 +2,10 @@ from django.conf import settings
 from django.db.models.signals import post_save
 from django.dispatch import receiver # импортируем нужный декоратор
 from django.core.mail import EmailMultiAlternatives
-from django.http import HttpResponse
-from django.shortcuts import redirect
+# from django.http import HttpResponse
+# from django.shortcuts import redirect
 from django.template.loader import render_to_string
-from django.core.mail import mail_admins
+# from django.core.mail import mail_admins
 
 from .models import Contact
 
